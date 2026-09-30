@@ -1,0 +1,15 @@
+﻿namespace Lib_app.entidades
+{
+    public class Sucursales
+    {
+        public int Id { get; set; }
+        public string? Nombre { get; set; }
+        public string? Direccion { get; set; }
+        public string? Ciudad { get; set; }
+        public string? Telefono { get; set; }
+        public bool Estado { get; set; }
+
+        //public List<Empleados> Empleados { get; set; } = new List<Empleados>();
+        //public List<Inventarios> Inventarios { get; set; } = new List<Inventarios>();
+    }
+}
