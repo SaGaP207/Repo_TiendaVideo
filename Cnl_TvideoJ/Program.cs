@@ -13,6 +13,7 @@ try
     var lista_categorias = conexion.Categorias!.ToList();
     var lista_clientes = conexion.Clientes!.ToList();
     var lista_ventas = conexion.Ventas!.Include(x => x._Empleado).Include(x => x._Cliente).ToList();
+    var lista_metodo_pagos = conexion.Metodo_Pagos!.Include(x => x._Venta).ToList();
 }
 catch (Exception ex)
 {

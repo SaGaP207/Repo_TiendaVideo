@@ -13,5 +13,7 @@ namespace Lib_app.interfaces
         DbSet<Categorias>? Categorias { get; set; }
         DbSet<Clientes>? Clientes { get; set; }
         DbSet<Ventas>? Ventas { get; set; }
+        DbSet<Metodo_Pagos>? Metodo_Pagos { get; set; }
+
     }
 }

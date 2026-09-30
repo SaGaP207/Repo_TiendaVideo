@@ -14,7 +14,7 @@ namespace Lib_app.entidades
         [ForeignKey("Empleado")] public Empleados? _Empleado { get; set; }
 
         //public List<Detalle_Ventas> Detalle_Ventas { get; set; } = new List<Detalle_Ventas>();
-        //public List<Metodo_Pagos> Metodo_Pagos { get; set; } = new List<Metodo_Pagos>();
+        public List<Metodo_Pagos>? Metodo_Pagos { get; set; } 
 
     }
 }

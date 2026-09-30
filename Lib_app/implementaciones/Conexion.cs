@@ -20,5 +20,6 @@ namespace Lib_app.implementaciones
         public DbSet<Categorias>? Categorias { get; set; }
         public DbSet<Clientes>? Clientes { get; set; }
         public DbSet<Ventas>? Ventas { get; set; }
+        public DbSet<Metodo_Pagos>? Metodo_Pagos { get; set; }
     }
 }
