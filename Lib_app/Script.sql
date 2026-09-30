@@ -109,7 +109,7 @@ VALUES ('900123456-1', 'Distribuidora Gaming Colombia', '6013334455', 'contacto@
 CREATE TABLE [Pedidos]
 (
   [Id] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
-  [Proveedor] INT NOT NULL REFERENCES [Provedores](Id),
+  [Proveedor] INT NOT NULL REFERENCES [Proveedores](Id),
   [Empleado] INT NOT NULL REFERENCES [Empleados](Id),
   [Fecha_Pedido] SMALLDATETIME NOT NULL,
   [Estado]  BIT NOT NULL DEFAULT 0,
