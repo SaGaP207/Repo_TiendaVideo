@@ -14,6 +14,6 @@ namespace Lib_app.entidades
         [ForeignKey("Cargo")] public Cargos? _Cargo { get; set; }
         [ForeignKey("Sucursal")] public Sucursales? _Sucursal { get; set; }
         public List<Ventas>? Ventas { get; set; }
-        //public List<Pedidos>? Pedidos { get; set; }
+        public List<Pedidos>? Pedidos { get; set; }
     }
 }

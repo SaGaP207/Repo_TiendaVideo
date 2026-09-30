@@ -1,7 +1,7 @@
 /*CREATE DATABASE db_tienda_video_juegos;
 GO
 USE db_tienda_video_juegos;
-
+GO
 
 CREATE TABLE [Sucursales]
 (
@@ -93,7 +93,7 @@ CREATE TABLE [Inventarios]
 INSERT INTO [Inventarios] ([Sucursal], [Cantidad], [Stock_Minimo], [Fecha_Actualizacion])
 VALUES (1, 50, 5, GETDATE());
 
-CREATE TABLE [Provedores]
+CREATE TABLE [Proveedores]
 (
   [Id] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
   [Nit] VARCHAR(20) NOT NULL UNIQUE,
@@ -102,21 +102,21 @@ CREATE TABLE [Provedores]
   [Correo] VARCHAR(100) UNIQUE NOT NULL,	
 );
 
-INSERT INTO [Provedores] ([Nit], [Nombre_Empresa], [Telefono], [Correo])
+INSERT INTO [Proveedores] ([Nit], [Nombre_Empresa], [Telefono], [Correo])
 VALUES ('900123456-1', 'Distribuidora Gaming Colombia', '6013334455', 'contacto@gamingcolombia.com');
 
 
 CREATE TABLE [Pedidos]
 (
   [Id] INT PRIMARY KEY IDENTITY(1, 1) NOT NULL,
-  [Provedor] INT NOT NULL REFERENCES [Provedores](Id),
+  [Proveedor] INT NOT NULL REFERENCES [Provedores](Id),
   [Empleado] INT NOT NULL REFERENCES [Empleados](Id),
   [Fecha_Pedido] SMALLDATETIME NOT NULL,
   [Estado]  BIT NOT NULL DEFAULT 0,
   [Total] DECIMAL(12, 2) NOT NULL	
 );
 
-INSERT INTO [Pedidos] ([Provedor], [Empleado], [Fecha_Pedido], [Estado], [Total])
+INSERT INTO [Pedidos] ([Proveedor], [Empleado], [Fecha_Pedido], [Estado], [Total])
 VALUES (1, 1, GETDATE(), 1, 1500000.00);
 
 CREATE TABLE [Categorias]

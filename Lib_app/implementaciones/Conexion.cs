@@ -21,5 +21,10 @@ namespace Lib_app.implementaciones
         public DbSet<Clientes>? Clientes { get; set; }
         public DbSet<Ventas>? Ventas { get; set; }
         public DbSet<Metodo_Pagos>? Metodo_Pagos { get; set; }
+        public DbSet<Inventarios>? Inventarios { get; set; }
+        public DbSet<Proveedores>? Proveedores { get; set; }
+        public DbSet<Pedidos>? Pedidos { get; set; }
+        public DbSet<Videojuegos>? Videojuegos { get; set; }
+
     }
 }

@@ -13,7 +13,7 @@ namespace Lib_app.entidades
         [ForeignKey("Cliente")] public Clientes? _Cliente { get; set; }
         [ForeignKey("Empleado")] public Empleados? _Empleado { get; set; }
 
-        //public List<Detalle_Ventas> Detalle_Ventas { get; set; } = new List<Detalle_Ventas>();
+        //public List<Detalle_Ventas>? Detalle_Ventas { get; set; }
         public List<Metodo_Pagos>? Metodo_Pagos { get; set; } 
 
     }
