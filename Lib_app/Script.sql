@@ -205,10 +205,10 @@ CREATE TABLE [Resenas]
   [Videojuego] INT NOT NULL REFERENCES [Videojuegos](Id),
   [Puntuacion]DECIMAL(3,1)NOT NULL,
   [Comentario] VARCHAR(MAX) NULL,
-  [Fecha_Reseña] SMALLDATETIME NOT NULL
+  [Fecha_Resena] SMALLDATETIME NOT NULL
 );
 
-INSERT INTO [Resenas] ([Cliente], [Videojuego], [Puntuacion], [Comentario], [Fecha_Reseña])
+INSERT INTO [Resenas] ([Cliente], [Videojuego], [Puntuacion], [Comentario], [Fecha_Resena])
 VALUES (1, 1, 5.0, 'Excelente juego, muy recomendado.', GETDATE());
 
 
