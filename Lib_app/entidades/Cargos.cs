@@ -7,6 +7,6 @@
         public string? Descripcion { get; set; }
         public decimal Salario { get; set; }
 
-        //public List<Empleados> Empleados { get; set; } = new List<Empleados>();
+        public List<Empleados>? Empleados { get; set; }
     }
 }

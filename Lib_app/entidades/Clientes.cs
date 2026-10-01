@@ -9,6 +9,6 @@
         public string? Ciudad { get; set; }
 
         public List<Ventas>? Ventas { get; set; }
-        //public List<Resenas> Resenas { get; set; } = new List<Resenas>();
+        public List<Resenas>? Resenas { get; set; }
     }
 }

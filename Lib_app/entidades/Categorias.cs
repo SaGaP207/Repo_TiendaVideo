@@ -8,6 +8,6 @@
         public bool Estado { get; set; }
         public DateTime Fecha_Creacion { get; set; }
 
-        //public List<Videojuegos> Videojuegos { get; set; } = new List<Videojuegos>();
+        public List<Videojuegos>? Videojuegos { get; set; }
     }
 }

@@ -13,6 +13,6 @@ namespace Lib_app.entidades
 
         [ForeignKey("Proveedor")] public Proveedores? _Proveedor { get; set; }
         [ForeignKey("Empleado")] public Empleados? _Empleado { get; set; }
-        //public List<Detalle_Pedidos> Detalle_Pedidos { get; set; } = new List<Detalle_Pedidos>();
+        public List<Detalle_Pedidos>? Detalle_Pedidos { get; set; }
     }
 }

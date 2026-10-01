@@ -11,6 +11,6 @@ namespace Lib_app.entidades
         public DateTime Fecha_Actualizacion { get; set; }
 
         [ForeignKey("Sucursal")] public Sucursales? _Sucursal { get; set; }
-        //public List<Videojuegos> Videojuegos { get; set; } = new List<Videojuegos>();
+        public List<Videojuegos>? Videojuegos { get; set; }
     }
 }

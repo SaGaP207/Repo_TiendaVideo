@@ -9,7 +9,7 @@
         public string? Telefono { get; set; }
         public bool Estado { get; set; }
 
-        //public List<Empleados> Empleados { get; set; } = new List<Empleados>();
-        //public List<Inventarios> Inventarios { get; set; } = new List<Inventarios>();
+        public List<Empleados>? Empleados { get; set; }
+        public List<Inventarios>? Inventarios { get; set; }
     }
 }
