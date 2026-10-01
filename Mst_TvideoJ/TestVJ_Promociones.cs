@@ -49,7 +49,7 @@ namespace Mst_TvideoJ
 
         private void Actualizar()
         {
-            this.entidad!.Precio_Promocion = 170.50m;       //-----
+            this.entidad!.Precio_Promocion = 17000.50m;       //-----
 
             var entry = this.conexion!.Entry<VJ_Promociones>(this.entidad);  //------
             entry.State = EntityState.Modified;

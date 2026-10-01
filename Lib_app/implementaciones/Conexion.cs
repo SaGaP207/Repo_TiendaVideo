@@ -34,7 +34,7 @@ namespace Lib_app.implementaciones
         public DbSet<Promociones>? Promociones { get; set; }
         public DbSet<VJ_Promociones>? VJ_Promociones { get; set; }
         public DbSet<Desarrolladores>? Desarrolladores { get; set; }
-        public DbSet<Desarr_Videoj>? Desarr_Videoj { get; set; }//
+        public DbSet<Desarr_Videoj>? Desarr_Videoj { get; set; }
 
     }
 }

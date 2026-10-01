@@ -51,7 +51,7 @@ namespace Mst_TvideoJ
 
         private void Actualizar()
         {
-            this.entidad!.Subtotal = 110000.00m;        //-----
+            this.entidad!.Subtotal = 10000000.00m;        //-----
 
             var entry = this.conexion!.Entry<Detalle_Ventas>(this.entidad);  //------
             entry.State = EntityState.Modified;

@@ -14,7 +14,7 @@ namespace Lib_app.entidades
 
         [ForeignKey("Videojuego")] public Videojuegos? _Videojuego { get; set; }
         [ForeignKey("Plataforma")] public Plataformas? _Plataforma { get; set; }
-        public List<VJ_Promociones> VJ_Promociones { get; set; } = new List<VJ_Promociones>();
+        public List<VJ_Promociones>? VJ_Promociones { get; set; }
 
     }
 }

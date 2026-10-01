@@ -18,7 +18,6 @@ try
     var lista_proveedores = conexion.Proveedores!.ToList();
     var lista_pedidos = conexion.Pedidos!.Include(x => x._Proveedor).Include(x => x._Empleado).ToList();
     var lista_videojuegos = conexion.Videojuegos!.Include(x => x._Inventario).Include(x => x._Categoria).ToList();
-
     var lista_detalle_ventas = conexion.Detalle_Ventas!.Include (x=> x._Venta).Include(x => x._Videojuego).ToList();
     var lista_detalle_pedidos = conexion.Detalle_Pedidos!.Include(x => x._Pedido).Include(x => x._Videojuego).ToList();
     var lista_plataformas = conexion.Plataformas!.ToList();
